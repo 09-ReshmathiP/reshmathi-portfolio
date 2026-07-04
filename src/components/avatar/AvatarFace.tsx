@@ -46,9 +46,12 @@ export function AvatarFace({ speaking, pulseTick }: AvatarFaceProps) {
   return (
     <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[inherit]">
       <picture>
-        <source srcSet="/images/reshmathi.webp" type="image/webp" />
+        <source
+        srcSet={`${import.meta.env.BASE_URL}images/reshmathi.webp`}
+        type="image/webp"
+      />
         <img
-          src="/images/reshmathi.jpg"
+          src={`${import.meta.env.BASE_URL}images/reshmathi.png`}
           alt="Reshmathi P"
           width={480}
           height={599}
