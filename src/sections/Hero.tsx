@@ -133,7 +133,7 @@ export function Hero() {
             </button>
 
             <a
-              href="/documents/Reshmathi_P_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}documents/Reshmathi_P_Resume.pdf`}
               download
               className="glass-panel flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium"
             >
@@ -206,22 +206,20 @@ export function Hero() {
   />
 
   <motion.img
-    src="/images/reshmathi.png"
-    alt="Reshmathi"
-    animate={{
-      y: [0, -10, 0],
-    }}
-    transition={{
-      duration: 5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    }}
-    className="relative z-10 w-[520px] xl:w-[600px] object-contain select-none"
-    style={{
-      filter: "drop-shadow(0 30px 60px rgba(0,212,255,.18))",
-    }}
-    draggable={false}
-  />
+  src={`${import.meta.env.BASE_URL}images/reshmathi.png`}
+  alt="Reshmathi"
+  animate={{ y: [0, -10, 0] }}
+  transition={{
+    duration: 5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="relative z-10 w-[520px] xl:w-[600px] object-contain select-none"
+  style={{
+    filter: "drop-shadow(0 30px 60px rgba(0,212,255,.18))",
+  }}
+  draggable={false}
+/>
 
 </div>
       </div>
