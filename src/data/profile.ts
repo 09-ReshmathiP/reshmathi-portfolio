@@ -45,7 +45,7 @@ export const profile: Profile = {
       degree: "B.Tech, Computer Science Engineering (Data Science & AI)",
       institution: "Dr. MGR Educational and Research Institute, Chennai",
       period: "2023 – 2027",
-      detail: "Current CGPA: 9.07",
+      detail: "Current CGPA: 9.05",
     },
     {
       id: "edu-12th",
@@ -186,60 +186,9 @@ export const profile: Profile = {
       ],
       accent: "amber",
     },
-    {
-      id: "proj-smart-charging",
-      title: "Smart Charging Alert App",
-      year: "2026",
-      summary:
-        "Monitors battery charging status and sends intelligent alerts to prevent overcharging, with real-time notifications and battery analytics.",
-      tags: ["Mobile", "Battery Analytics"],
-      problem:
-        "Leaving devices plugged in past a full charge degrades battery health over time, and most devices don't warn users clearly.",
-      solution:
-        "Built an app that monitors charging status in real time and sends intelligent alerts to prevent overcharging, paired with battery analytics for visibility into charging habits.",
-      architecture: [
-        "Battery status monitoring layer",
-        "Alert/notification engine triggered on charge thresholds",
-        "Analytics view summarizing charging history",
-      ],
-      challenges: [
-        "Reading battery status reliably across different device conditions",
-        "Tuning alert thresholds so they're helpful, not annoying",
-      ],
-      futureImprovements: [
-        "Add personalized charging recommendations based on usage patterns",
-        "Support smart-plug integration to auto-stop charging",
-      ],
-      accent: "synapse",
-    },
-    {
-      id: "proj-smart-alarm",
-      title: "Smart AI-Based Alarm App",
-      year: "2026",
-      summary:
-        "Alarm app with puzzle challenges, photo verification, and ghost mode to prevent oversleeping, featuring customizable alarms and interactive tasks.",
-      tags: ["Mobile", "AI"],
-      problem:
-        "Traditional alarms are easy to dismiss half-asleep, leading to oversleeping even when the alarm did its job.",
-      solution:
-        "Built an alarm app that requires solving a puzzle or completing photo verification to dismiss the alarm, plus a ghost mode for extra difficulty, alongside fully customizable alarm settings.",
-      architecture: [
-        "Alarm scheduling engine",
-        "Interactive dismissal tasks: puzzle challenge, photo verification, ghost mode",
-        "Customization layer for alarm settings",
-      ],
-      challenges: [
-        "Making dismissal tasks hard enough to wake someone up without being frustrating",
-        "Handling photo verification reliably in low-light morning conditions",
-      ],
-      futureImprovements: [
-        "Add sleep-cycle-aware smart wake timing",
-        "Introduce social/accountability features to track wake-up streaks",
-      ],
-      accent: "signal",
-    },
   ],
-  internships: [
+
+   internships: [
     {
       id: "intern-cognifyz",
       role: "Web Development Intern",

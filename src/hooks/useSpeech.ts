@@ -58,11 +58,37 @@ export function useSpeech(): UseSpeechReturn {
       utterance.volume = mutedRef.current ? 0 : 1;
 
       const voices = window.speechSynthesis.getVoices();
-      const preferred = voices.find(
-        (v) => /female/i.test(v.name) || /Samantha|Google US English|Zira/i.test(v.name)
-      );
-      if (preferred) utterance.voice = preferred;
 
+console.log("Available Voices:");
+voices.forEach((voice) => console.log(voice.name));
+
+const preferred =
+  // macOS
+  voices.find(v => v.name === "Samantha") ||
+  voices.find(v => v.name === "Karen") ||
+  voices.find(v => v.name === "Moira") ||
+  voices.find(v => v.name === "Daniel") ||
+
+  // Microsoft Edge
+  voices.find(v => v.name.includes("Microsoft Aria")) ||
+  voices.find(v => v.name.includes("Microsoft Jenny")) ||
+  voices.find(v => v.name.includes("Microsoft Guy")) ||
+
+  // Chrome
+  voices.find(v => v.name.includes("Google UK English Female")) ||
+  voices.find(v => v.name.includes("Google UK English Male")) ||
+  voices.find(v => v.name.includes("Google US English")) ||
+
+  // Fallback
+  voices[0];
+
+utterance.voice = preferred;
+
+utterance.rate = 0.92;
+utterance.pitch = 1.0;
+utterance.volume = mutedRef.current ? 0 : 1;
+      
+        
       utterance.onstart = () => {
         setIsSpeaking(true);
         setIsPaused(false);

@@ -1,6 +1,6 @@
 export const aboutCopy = {
   story: [
-    "Reshmathi is a Computer Science Engineering student specializing in Data Science and Artificial Intelligence at Dr. MGR Educational and Research Institute, Chennai — currently holding a 9.07 CGPA.",
+    "Reshmathi is a Computer Science Engineering student specializing in Data Science and Artificial Intelligence at Dr. MGR Educational and Research Institute, Chennai — currently holding a 9.05 CGPA.",
     "Her work spans business intelligence dashboards, real-time detection systems, and full-stack React applications, built by pairing structured data analysis with practical software engineering.",
     "She's drawn to problems where data can be turned into a decision — and to the discipline of shipping something that actually works, not just a proof of concept.",
   ],
