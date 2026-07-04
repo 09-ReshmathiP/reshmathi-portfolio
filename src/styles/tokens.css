@@ -1,0 +1,87 @@
+/**
+ * DESIGN TOKEN SYSTEM — Reshmathi P · Personal Brand Site
+ * ---------------------------------------------------------
+ * Signature idea: two accents standing in for two neurons signaling
+ * each other (Synapse Violet + Signal Teal) on an ink-black base,
+ * with a warm amber reserved for one purpose only: certificates/highlights.
+ * Every color, weight, and spacing decision in the site traces back here.
+ */
+
+@theme {
+  /* ---------- COLOR: base ---------- */
+  --color-ink: #0a0b10;           /* page background — near-black, blue undertone */
+  --color-ink-raised: #101219;    /* elevated surfaces (cards, panels) before glass */
+  --color-ink-overlay: #0d0e14cc; /* modal / sticky nav backdrop */
+
+  /* ---------- COLOR: text ---------- */
+  --color-text-primary: #f2f3f7;
+  --color-text-secondary: #b7bacb;
+  --color-text-muted: #8b8fa3;
+  --color-text-faint: #7d8199; /* WCAG AA: 5.12:1 on --color-ink */
+
+  /* ---------- COLOR: accents ---------- */
+  --color-synapse: #7c6cff;       /* primary accent — CTAs, links, active states */
+  --color-synapse-dim: #5b4ecf;
+  --color-signal: #3ddbd9;        /* secondary accent — data/skills/stats */
+  --color-signal-dim: #2bb3b1;
+  --color-amber: #ffb454;         /* reserved: certificates + one hero highlight word */
+
+  /* ---------- COLOR: glass & borders ---------- */
+  --color-glass-fill: rgba(255, 255, 255, 0.045);
+  --color-glass-fill-strong: rgba(255, 255, 255, 0.08);
+  --color-glass-border: rgba(255, 255, 255, 0.09);
+  --color-glass-border-strong: rgba(255, 255, 255, 0.16);
+
+  /* ---------- COLOR: semantic ---------- */
+  --color-success: #4ade80;
+  --color-danger: #ff6b6b;
+
+  /* ---------- TYPE FAMILIES ---------- */
+  --font-display: "Cabinet Grotesk", "General Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+
+  /* ---------- TYPE SCALE (fluid, clamp-based) ---------- */
+  --text-display-xl: clamp(3rem, 2.1rem + 4.2vw, 6.5rem);   /* hero headline */
+  --text-display-lg: clamp(2.25rem, 1.7rem + 2.6vw, 4rem);  /* section headlines */
+  --text-display-md: clamp(1.75rem, 1.45rem + 1.4vw, 2.5rem);
+  --text-body-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.375rem);
+  --text-body-md: 1rem;
+  --text-body-sm: 0.875rem;
+  --text-mono-sm: 0.8125rem;
+
+  /* ---------- SPACING / LAYOUT ---------- */
+  --section-gap: clamp(5rem, 4rem + 4vw, 9rem);
+  --content-max: 1280px;
+  --content-pad: clamp(1.25rem, 1rem + 2vw, 3rem);
+
+  /* ---------- RADII ---------- */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* ---------- MOTION ---------- */
+  --ease-signature: cubic-bezier(0.16, 1, 0.3, 1); /* confident, decelerated */
+  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 180ms;
+  --duration-base: 420ms;
+  --duration-slow: 900ms;
+
+  /* ---------- Z-INDEX SCALE ---------- */
+  --z-thread: 5;
+  --z-content: 10;
+  --z-nav: 40;
+  --z-avatar: 50;
+  --z-modal: 60;
+}
+
+/* Reduced motion: respected globally, not just on the hero */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

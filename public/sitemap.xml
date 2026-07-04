@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://reshmathi-p.example.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url><loc>https://reshmathi-p.example.com/projects/proj-city-weather</loc></url>
+  <url><loc>https://reshmathi-p.example.com/projects/proj-captcha</loc></url>
+  <url><loc>https://reshmathi-p.example.com/projects/proj-scream-detection</loc></url>
+  <url><loc>https://reshmathi-p.example.com/projects/proj-driver-site</loc></url>
+  <url><loc>https://reshmathi-p.example.com/projects/proj-ticket-booking</loc></url>
+  <url><loc>https://reshmathi-p.example.com/projects/proj-smart-charging</loc></url>
+  <url><loc>https://reshmathi-p.example.com/projects/proj-smart-alarm</loc></url>
+</urlset>
