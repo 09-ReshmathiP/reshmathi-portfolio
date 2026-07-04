@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { PageShell } from "../components/layout/PageShell";
 import { HomePage } from "../sections/HomePage";
@@ -18,7 +18,7 @@ function RouteFallback() {
   );
 }
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: (
